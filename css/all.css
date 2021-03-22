@@ -68,20 +68,27 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #333;
+  background-color: #444;
+  opacity: 80%;
+  position: fixed;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  z-index: 300;
+}
+
+.wrap .topbar .logo {
+  padding: 1em;
 }
 
 .wrap .topbar .logo a {
-  background-image: url(https://i.imgur.com/Ep7nTxy.png);
+  background-image: url(https://github.com/hoyi-23/git_RWDfinal/blob/master/assets/logo_w.png?raw=true);
   text-indent: 101%;
   white-space: nowrap;
   width: 120px;
   height: 24px;
   overflow: hidden;
-  border: solid 1px;
 }
 
 .wrap .topbar .top_nav {
@@ -107,9 +114,372 @@ a {
 }
 
 .wrap .banner {
-  background-image: url();
+  position: relative;
+  background-image: url(https://github.com/hoyi-23/git_RWDfinal/blob/master/assets/header_desktop.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap .banner .slogan {
+  background-color: rgba(0, 0, 0, 0.35);
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+.wrap .banner .slogan h2 {
+  font-size: 40px;
+  line-height: 50px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.wrap .banner .slogan p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.wrap .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .main .feature_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .main .feature_section .feature_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .feature_section .feature_head .line {
+  background-color: #3d1101;
+  width: 10%;
+  height: 1px;
+}
+
+.wrap .main .feature_section .feature_head h3 {
+  font-size: 20px;
+  padding: 50px 30px 50px 30px;
+  text-align: center;
+  line-height: 25px;
+  color: #3d1101;
+  font-weight: bold;
+}
+
+.wrap .main .feature_section .feature_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+}
+
+.wrap .main .feature_section .feature_contain .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .feature_section .feature_contain .feature img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.wrap .main .feature_section .feature_contain .feature h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0px 10px 0px;
+  color: #3d1101;
+}
+
+.wrap .main .feature_section .feature_contain .feature p {
+  font-size: 16px;
+  padding: 0px 30px 0px 30px;
+  color: #3d1101;
+}
+
+.wrap .main .chef_section {
   width: 100%;
-  height: auto;
-  border: solid 1px;
+  background-color: #3d1101;
+  margin-top: 50px;
+}
+
+.wrap .main .chef_section .chef_info {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .main .chef_section .chef_info .chef_intro {
+  width: 50%;
+  padding: 40px;
+  color: #fff;
+}
+
+.wrap .main .chef_section .chef_info .chef_intro h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.wrap .main .chef_section .chef_info .chef_intro p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.wrap .main .feedback_section {
+  margin-top: 50px;
+}
+
+.wrap .main .feedback_section .feedback_head h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #3d1101;
+  font-weight: bold;
+}
+
+.wrap .main .feedback_section .feedback_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.wrap .main .feedback_section .feedback_contain .feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+}
+
+.wrap .main .feedback_section .feedback_contain .feedback img {
+  border-radius: 50%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.wrap .main .feedback_section .feedback_contain .feedback .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 5px 25px 25px;
+  color: #3d1101;
+}
+
+.wrap .main .feedback_section .feedback_contain .feedback .text h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.wrap .main .feedback_section .feedback_contain .feedback .text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.wrap .main .feedback_section .feedback_contain .feedback .text .id {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.wrap .main .reserve_section {
+  background-color: #f6f4f3;
+  padding: 20px 0px;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.wrap .main .reserve_section .reserve {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrap .main .reserve_section .reserve h3 {
+  font-size: 20px;
+  color: #3d1101;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0px;
+  line-height: 30px;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .map {
+  width: 40%;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .form label {
+  margin-bottom: 10px;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .form input {
+  margin-bottom: 20px;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .form .btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 20px;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .form .btn .sub_btn {
+  background-color: orange;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.wrap .main .reserve_section .reserve .reserve_contain .form .btn .can_btn {
+  background-color: #666;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.wrap .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px 40px;
+}
+
+.wrap .footer .about {
+  width: 20%;
+  color: #3d1101;
+}
+
+.wrap .footer .about h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.wrap .footer .about p {
+  font-size: 16px;
+}
+
+.wrap .footer .contact {
+  width: 20%;
+  color: #3d1101;
+}
+
+.wrap .footer .contact h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.wrap .footer .contact p {
+  font-size: 16px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .footer .contact p a:hover {
+  color: red;
+}
+
+.wrap .footer .social {
+  width: 20%;
+}
+
+.wrap .footer .social h1 a {
+  margin: 0 auto;
+  background-image: url(https://raw.githubusercontent.com/hoyi-23/git_RWDfinal/d107c3a6db8cfcc3e40ac2e116b0dcfbe151ed91/assets/logo_l%40svg.svg);
+  text-indent: 101%;
+  white-space: nowrap;
+  width: 244px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.wrap .footer .social .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrap .footer .social .media i {
+  font-size: 40px;
+  margin-top: 20px;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=all.css.map */

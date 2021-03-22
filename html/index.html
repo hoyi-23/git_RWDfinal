@@ -21,9 +21,10 @@
           <li><a href="login.html" target="_self">登入</a></li>
         </ul>
       </div>
-      <div class="banner">
+      <div class="banner" id="top">
         <div class="slogan">
-          <h2>咬一口就無法忘懷的漢堡 </h2>
+          <h2>咬一口
+            <br>就無法忘懷的漢堡 </h2>
           <p>七夕絕對無法錯過的好滋味
             <br>
             <i class="fas fa-utensils"></i>
@@ -34,7 +35,7 @@
       </div>
       <div class="main">
         <div class="feature_section">
-          <div class="fecture_head">
+          <div class="feature_head">
             <div class="line"></div>
             <h3>客人總是在詢問
               <br>這麼好吃的秘訣是什麼?</h3>
@@ -60,55 +61,55 @@
             <div class="feature">
               <img src="../assets/feature_3.png" alt="台灣本土蔬菜" />
               <h4>台灣本土蔬菜</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique, rem quasi suscipit quam et magni,
+              <p id="today_chef" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique, rem quasi suscipit quam et magni,
                 eveniet numquam inventore voluptatibus tempore voluptate quo.
                 Totam, aut eaque nemo reiciendis veritatis laboriosam!Non odit
                 enim neque maxime quos distinctio consequuntur eum reiciendis corporis?</p>
             </div>
           </div>
         </div>
-        <div class="chef_section" id="today_chef"> 
-          <img src="../assets/main_chef_brown.png" alt="今日主廚 : 帕金森‧梅在帕" />
-          <div class="chef_intro">
-            <h4>今日主廚 : 帕金森‧梅在帕
-                <br>Today Chef: Plum in Shock</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique, rem quasi suscipit quam et magni,
-              eveniet numquam inventore voluptatibus tempore voluptate quo.
-              Totam, aut eaque nemo reiciendis veritatis laboriosam!Non odit
-              enim neque maxime quos distinctio consequuntur eum reiciendis corporis?</p>
+        <div class="chef_section"> 
+          <div class="chef_info">
+            <img src="../assets/main_chef_brown.png" alt="今日主廚 : 帕金森‧梅在帕" />
+            <div class="chef_intro">
+              <h3>今日主廚 : 帕金森‧梅在帕
+                  <br>Today Chef: Plum in Shock</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique, rem quasi suscipit quam et magni,
+                eveniet numquam inventore voluptatibus tempore voluptate quo.
+                Totam, aut eaque nemo reiciendis veritatis laboriosam!Non odit
+                enim neque maxime quos distinctio consequuntur eum reiciendis corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique, rem quasi suscipit quam et magni,
+                eveniet numquam inventore voluptatibus tempore voluptate quo.
+                Totam, aut eaque nemo reiciendis veritatis laboriosam!Non odit
+                enim neque maxime quos distinctio consequuntur eum reiciendis corporis?</p>
+            </div>
           </div>
         </div>
         <div class="feedback_section">
           <div class="feedback_head">
-            <h3>聽聽別人的感想</h3>
+            <h2>聽聽別人的感想</h2>
           </div>
           <div class="feedback_contain">
             <div class="feedback">
-              <div class="pic_name"> 
-                <img src="../assets/avatar_1.png" alt="高雄一口吃" />
-                <h3>高雄一口吃</h3>
-              </div>
+              <img src="../assets/avatar_1.png" alt="高雄一口吃" />
               <div class="text">
+                <h3>高雄一口吃</h3>
                 <p>自從吃了這家餐廳以後，我口水連續留的一多月都沒停，</p>
                 <p class="id">--產品經理</p>
               </div>
             </div>
             <div class="feedback">
-              <div class="pic_name"> 
-                <img src="../assets/avatar_2.png" alt="高雄一口吃" />
-                <h3>高雄一口吃</h3>
-              </div>
+              <img src="../assets/avatar_1.png" alt="高雄一口吃" />
               <div class="text">
+                <h3>高雄一口吃</h3>
                 <p>自從吃了這家餐廳以後，我口水連續留的一多月都沒停，</p>
                 <p class="id">--產品經理</p>
               </div>
             </div>
             <div class="feedback">
-              <div class="pic_name"> 
-                <img src="../assets/avatar_3.png" alt="高雄一口吃" />
-                <h3>高雄一口吃</h3>
-              </div>
+              <img src="../assets/avatar_1.png" alt="高雄一口吃" />
               <div class="text">
+                <h3>高雄一口吃</h3>
                 <p>自從吃了這家餐廳以後，我口水連續留的一多月都沒停，</p>
                 <p class="id">--產品經理</p>
               </div>
@@ -116,18 +117,47 @@
           </div>
         </div>
         <div class="reserve_section">
-          <div class="reserve_head">
+          <div class="reserve">
             <h3>我們的位置不太夠坐<br>要不要先訂位呢?</h3>
-          </div>
-          <div class="reserve_contain">
-            <div class="map"> </div>
-            <div class="form"> </div>
+            <div class="reserve_contain">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115696.99014233057!2d121.51777904737456!3d25.01604965349035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aca737abcb61%3A0x95fd9099bdd65f64!2z5Y2X5riv6Luf6auU5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1616389940796!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <form action="index.html" class="form">
+                <label for="name"> 姓名</label>
+                <input type="text" name="name" id="name" placeholder="請輸入全名">
+                <label for="phone"> 電話</label>
+                <input type="tel" name="phone" id="phone" placeholder="0911112222">
+                <label for="mail"> 信箱</label>
+                <input type="email" name="e_mail" id="mail" placeholder="1234@hexschool.com">
+                <label for="number"> 人數</label>
+                <input type="number" name="number" id="number" min="1" max="30">
+                <div class="btn">
+                  <input class="can_btn" type="reset" value="取消">
+                  <input class="sub_btn" type="submit" value="送出">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <div class="footer">
-        <div class="about"> </div>
-        <div class="contact"> </div>
+        <div class="about">
+          <h3> 關於&nbsp;六角西餐廳</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero consequatur repellendus adipisci quis voluptate iusto reiciendis molestias voluptatibus deleniti! Maxime optio voluptas hic iure impedit natus recusandae vitae facere nihil?</p>
+        </div>
+        <div class="contact"> 
+          <h3>聯絡方式</h3>
+          <p>地址:&nbsp;<a href="#">高雄市高雄路5段5號5樓</a></p>
+          <p>電話:&nbsp;<a href="tel">09123456789</a></p>
+          <p>信箱:&nbsp;<a href="Mailto">hex@school.com</a></p>
+        </div>
+        <div class="social">
+          <h1><a href="#top">logo</a></h1>
+          <div class="media">
+          <i class="fab fa-twitter-square" style="color:#00aaec"></i>
+          <i class="fab fa-facebook-square" style="color:#4460a0"></i>
+          <i class="fab fa-google-plus-square" style="color:#db4437"></i>
+        </div>
+        </div>
       </div>
     </div>
     <!----jS---->
