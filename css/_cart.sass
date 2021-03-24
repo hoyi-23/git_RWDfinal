@@ -1,0 +1,119 @@
+.wrap
+    .topbar
+    .banner
+    .cart_main
+        display: flex
+        margin: 0 auto
+        padding: 60px 0px 70px 0px
+        max-width: 960px
+        .side_menu
+            width: 25%
+            .side_menu_head
+                display: flex
+                color: $main_color_brown
+                font-weight: bold
+                font-size: $font_size_h2
+                padding-bottom: 30px
+                h2
+                    padding-left: 10px
+            .side_menu_list
+                li
+                    a
+                        color: $main_color_brown
+                        font-size: $font_size_h3
+                        padding: 15px
+                        border-bottom: solid 1px
+                        border-radius: 5px
+                    a:hover
+                        background-color: $main_color_brown
+                        color: #fff
+        .cart_contain
+            margin-left: 60px
+            width: 75%
+            .cart_contain_head
+                display: flex
+                justify-content: space-between
+                .search
+                    border: solid 3px $main_color_brown
+                    width: 76%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    background-color: $main_color_brown
+                    .search_box
+                        height: 100%
+                        width: 95%
+                        background-color: #efe9e7
+                        border: none
+                    .search_icon
+                        width: 5%
+                        text-align: center
+                .purchase
+                    display: flex
+                    align-items: center     
+                    h4
+                        border-right: solid 1px
+                        padding-right: 10px
+                        margin-right: 10px
+                        font-size: $font_size_h4
+                    a
+                        color: $main_color_brown
+            .cart_contain_body
+                display: flex
+                flex-wrap: wrap
+                .item
+                    width: 30%
+                    margin: 15px 10px
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    position: relative
+                    border-radius: 5px
+                    box-shadow: 1px 1px 10px #c5c5c5
+                    overflow: hidden
+                    img
+                        width: 100%
+                        height: 120px
+                        object-fit: cover
+                    a
+                        position: absolute
+                        color: #ffffff
+                        z-indext: 100
+                        top: 5px 
+                        left: 5px
+                    .best_sell_box
+                        width: 120px
+                        height: 30px
+                        background-color: #53da9b
+                        position: absolute
+                        right: -30px
+                        top: 15px
+                        transform: rotate(45deg)
+                        p
+                            text-align: center
+                            line-height: 30px
+                            font-size: 15px
+                            color: #fff
+                    h3
+                        padding: 20px 0px 10px 0px
+                        font-size: $font_size_h3
+                        color: $main_color_brown
+                    p
+                        font-size: $font_size_p
+                        color: $main_color_brown
+                        padding-bottom: 10px
+                    hr
+                        width: 100px
+                    .add_to_cart
+                        width: 80%
+                        color: $icon_color_g
+                        border: solid 1px $icon_color_g
+                        border-radius: 2px
+                        margin: 10px 0px 15px 0px
+                        padding: 10px 0px
+                    .add_to_cart:hover
+                        background-color: $icon_color_g
+                        color: #fff
+
+
